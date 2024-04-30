@@ -3,10 +3,11 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .barra-superior {
-    background-color: #464542; /* Color de fondo del rectángulo */
+    background-color: #000000; /* Color de fondo del rectángulo */
     color: #fff; /* Color del texto dentro del rectángulo */
     margin: auto;
     padding: 10px;
@@ -214,6 +215,7 @@ main p{
     height: 9cm;
     left: 50%;
     bottom: 8.60cm;
+    margin-top: 20px;
     
 
 }
