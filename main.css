@@ -60,11 +60,21 @@ body{
     left: 40%;
 }
 
+.Elemnto-barra4{
+    position: relative;
+    top: -5px;
+    left: 40%;
+}
 
+.Elemnto-barra5{
+    position: relative;
+    top: -5px;
+    left: 40%;
+}
 
 .Cuadro-registro-login{
     position: relative;
-    left: 77%;
+    left: 40%;
     top: -25px;
 }
 
