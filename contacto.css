@@ -34,6 +34,7 @@ nav ul li a {
 .contact {
     padding: 20px;
     background: #222;
+
 }
 
 .contact h1, .contact p {
@@ -84,3 +85,25 @@ footer {
     width: 100%;
     height: auto;
 }
+
+#contenedor {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+}
+
+#lateral {
+    width: 30%;  /* Este será el ancho que tendrá tu columna */
+    float:right; /* Aquí determinas de lado quieres quede esta "columna" */
+}
+
+#principal {
+    width: 70%;
+    float: left;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
