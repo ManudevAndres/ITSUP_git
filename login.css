@@ -1,0 +1,207 @@
+body{
+    background-color: #1a1a19;
+    overflow-x: hidden;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.contenedor{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    height: auto;
+    margin-top: 3cm;
+    /*background-color: #464542; */
+}
+.contenedor h1{
+    font-size: 3rem;
+}
+
+
+.contenedor h2{
+    font-size: x-large;
+    position: relative;
+    bottom: 25px;
+}
+
+.Apartado-email {
+    border: 2px solid #1a1a19;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    height: 2cm;
+    /*background-color: cadetblue;*/
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    position: relative;
+}
+
+.Apartado-email form input{
+    background-color: #1a1a19;
+    border: none;
+    border-style: solid;
+    border-color: #464542;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 45px;
+    width: 15cm;
+    font-size: medium;
+    outline: none;  
+    margin-top: 10px;
+
+}
+
+.Apartado-email form {
+    position: relative;
+}
+
+.Apartado-email form i {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.Apartado-contraseña {
+    border: 2px solid #1a1a19;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    height: 2cm;
+    /*background-color: cadetblue;*/
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    position: relative;
+}
+
+.Apartado-contraseña form input{
+    background-color: #1a1a19;
+    border: none;
+    border-style: solid;
+    border-color: #464542;
+    border-width: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 45px;
+    width: 15cm;
+    font-size: medium;
+    outline: none;  
+    margin-top: 10px;
+}
+
+.Apartado-contraseña form {
+    position: relative;
+}
+
+
+.Apartado-contraseña form i {
+    position: absolute;
+    top: 60%;
+    right: 10px; 
+    transform: translateY(-50%);
+}
+
+
+
+input[type="email"] {
+    color: #9f9d9d; 
+}
+
+input[type="password"] {
+    color: #9f9d9d;
+}
+
+.Finalización-registro {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: auto;
+    /*background-color: #464542;*/
+    position: relative;
+    bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; 
+}
+
+.checkbox-container input {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:  15px;
+    height: 15px;
+    border:1px solid #242323;
+    box-shadow: 2px 2px 3px rgba(93, 91, 91, 0.3); 
+}
+
+
+input[type="checkbox"]:checked + label:before {
+    content: '✔'; 
+    color: #504f4f; 
+    text-align: center; 
+}
+
+
+.boton-registro{
+    margin: auto;
+    background-color: black;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 14.5cm;
+    height: 1cm;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+    position: relative;
+    bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333; 
+    width: 50%; 
+    margin: auto; 
+    margin-top: 20px; 
+}
+
+
+
+a {
+    margin-left: 5px;
+    text-decoration: none; 
+    color: inherit; 
+}
