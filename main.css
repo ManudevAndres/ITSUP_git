@@ -74,8 +74,9 @@ body{
 
 .Cuadro-registro-login{
     position: relative;
-    left: 40%;
+    left: 75%;
     top: -25px;
+    width: 5cm;
 }
 
 .reactangulo-negro-encabezado{

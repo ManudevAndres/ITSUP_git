@@ -107,3 +107,27 @@ footer {
     display: table;
     clear: both;
   }
+
+  .contact3 {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    align-items: center;    /* Centra las columnas verticalmente */
+    height: 100%;           /* Opcional: Ajustar según la altura deseada */
+}
+
+.contact3 > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;          /* Espacio dentro de cada columna */
+}
+
+
+
+
