@@ -12,7 +12,6 @@ body{
     margin: auto;
     padding: 10px;
     margin-top: 40px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); /* Sombra blanca */
     height: 2cm;
     width: 26cm;
 }
@@ -116,7 +115,6 @@ h3{
 
 }
 
-
 .rectangulo-gris2{
     align-items: center;
     display: grid;
@@ -129,6 +127,7 @@ h3{
     height: 45px; /* Especifica la altura del rectángulo */
     font-size: medium;
     font-weight: bold;
+    font-variant: normal;
 }    
 
 
@@ -140,8 +139,9 @@ main{
     background-color: #1a1a19;
     margin: 0px; /* Elimina los márgenes predeterminados del cuerpo y la página */
     padding: 0px; /* Elimina el relleno predeterminado del cuerpo y la página */
-    height: 100cqmax;
+    height: auto;
     width: 100cqmax;
+    margin-top: 20px;
 }
 
 
@@ -167,14 +167,19 @@ main{
     position: relative;
     bottom: 30px;
 }
+.Titulo-main, .Subtitulo-main, .Pequeño-titulo-main {
+    margin-top: 20px; /* Aumenta el espacio arriba de cada título */
+}
 
 .bloque-gris-main{
-    background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
+    background-color:#464542 ;
+    align-content:flex-end;
     position: relative; /* Establece la posición absoluta */
-    width: 17cm;
-    height: 10cm;
+    width: 14cm;
+    height: 8cm;
     left: 35%;
     top: 60px;
+    margin-top: 20px;
 }
 
 main h4 {
@@ -210,12 +215,13 @@ main p{
 
 .bloque-gris-main2{
     background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
-    position: relative; /* Establece la posición absoluta */
+    position: relative;
     width: 11cm;
     height: 9cm;
     left: 50%;
     bottom: 8.60cm;
     margin-top: 20px;
+    display: flex;
     
 
 }
@@ -227,6 +233,10 @@ main h6{
     font-size: 3rem;
     position: relative;
     bottom: 25%
+}
+
+.h6 {
+    margin-top: 40px; 
 }
 
 .Bloque-infraestructura{
@@ -242,16 +252,15 @@ main h6{
     height: 45px; /* Especifica la altura del rectángulo */
     position: relative;
     bottom: 30%;
+    margin-top: 10px;
 }
 
+.bloque-final {
 
+    display: flex;
+}
 
-
-
-
-
-
-
-
-
-
+.enlace {
+    color: white;
+    text-decoration: none;
+}
