@@ -7,8 +7,8 @@ body{
 }
 
 .barra-superior{
-    background-color: #464542; /* Color de fondo del rectángulo */
-    color: #fff; /* Color del texto dentro del rectángulo */
+    background-color: #464542;
+    color: #fff;
     width: auto;
     height: 80px;
     padding: auto;
@@ -24,20 +24,20 @@ body{
 }
 
 .barra-superior ul {
-    list-style-type: none; /* Quita los marcadores de lista */
-    padding: 0; /* Elimina el espacio interno de la lista */
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center;
 }
 
 .barra-superior nav ul li {
-    margin-right: 100px; /* Espacio entre los elementos de lista */
+    margin-right: 100px;
 }
 
 .derecha {
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center;
 
 }
 
@@ -53,7 +53,7 @@ body{
 
 .rectangulo a {
     text-decoration: none;
-    color: inherit; /* Hace que el color del enlace sea el mismo que el del texto circundante */
+    color: inherit;
 }
 
 main{
@@ -105,7 +105,7 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    border-top: 1px solid #fff; /* Cambia el color según tus necesidades */
+    border-top: 1px solid #fff;
 }
 
 

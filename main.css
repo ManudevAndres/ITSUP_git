@@ -7,8 +7,8 @@ body{
 }
 
 .barra-superior {
-    background-color: #000000; /* Color de fondo del rectángulo */
-    color: #fff; /* Color del texto dentro del rectángulo */
+    background-color: #000000;
+    color: #fff;
     margin: auto;
     padding: 10px;
     margin-top: 40px;
@@ -17,13 +17,13 @@ body{
 }
 
 .barra-superior nav ul {
-    list-style-type: none; /* Quita los marcadores de lista */
-    padding: 0; /* Elimina el espacio interno de la lista */
+    list-style-type: none;
+    padding: 0;
 }
 
 .barra-superior nav ul li {
-    display: inline; /* Muestra los elementos de lista en línea */
-    margin-right: 10px; /* Espacio entre los elementos de lista */
+    display: inline;
+    margin-right: 10px;
 }
 
 
@@ -34,8 +34,8 @@ body{
 }
 
 .rectangulo-gris{
-    border: 1px solid black; /* Ancho, estilo y color del borde */
-    padding: 14px 30px; /* Ajusta según tus necesidades */
+    border: 1px solid black;
+    padding: 14px 30px;
     margin-left: -15px;
     
 }
@@ -81,9 +81,9 @@ body{
 
 .reactangulo-negro-encabezado{
     background-color: #1a1a19;
-    width: 390px; /* Especifica el ancho del rectángulo */
-    height: 230px; /* Especifica la altura del rectángulo */
-    display: flex; /* Utiliza flexbox para centrar el contenido */
+    width: 390px;
+    height: 230px;
+    display: flex;
     position: relative;
     left: 55%;
     bottom: 5cm;
@@ -134,8 +134,8 @@ h3{
     top: -50px;
     background-color: #969592;
     color: black; 
-    width: 350px; /* Especifica el ancho del rectángulo */
-    height: 45px; /* Especifica la altura del rectángulo */
+    width: 350px;
+    height: 45px;
     font-size: medium;
     font-weight: bold;
     font-variant: normal;
@@ -148,8 +148,8 @@ h1{
 
 main{
     background-color: #1a1a19;
-    margin: 0px; /* Elimina los márgenes predeterminados del cuerpo y la página */
-    padding: 0px; /* Elimina el relleno predeterminado del cuerpo y la página */
+    margin: 0px;
+    padding: 0px;
     height: auto;
     width: 100cqmax;
     margin-top: 20px;
@@ -179,13 +179,13 @@ main{
     bottom: 30px;
 }
 .Titulo-main, .Subtitulo-main, .Pequeño-titulo-main {
-    margin-top: 20px; /* Aumenta el espacio arriba de cada título */
+    margin-top: 20px;
 }
 
 .bloque-gris-main{
     background-color:#464542 ;
     align-content:flex-end;
-    position: relative; /* Establece la posición absoluta */
+    position: relative;
     width: 14cm;
     height: 8cm;
     left: 35%;
@@ -225,7 +225,7 @@ main p{
 }
 
 .bloque-gris-main2{
-    background-color:#464542 ; /* Color de fondo del bloque dentro del fondo */
+    background-color:#464542 ;
     position: relative;
     width: 11cm;
     height: 9cm;
@@ -259,8 +259,8 @@ main h6{
     display: grid;
     margin: auto;
     background-color: #969592 ;
-    width: 13cm; /* Especifica el ancho del rectángulo */
-    height: 45px; /* Especifica la altura del rectángulo */
+    width: 13cm;
+    height: 45px;
     position: relative;
     bottom: 30%;
     margin-top: 10px;

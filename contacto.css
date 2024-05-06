@@ -93,8 +93,8 @@ footer {
 }
 
 #lateral {
-    width: 30%;  /* Este será el ancho que tendrá tu columna */
-    float:right; /* Aquí determinas de lado quieres quede esta "columna" */
+    width: 30%; 
+    float:right; 
 }
 
 #principal {
@@ -113,9 +113,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    align-items: center;    /* Centra las columnas verticalmente */
-    height: 100%;           /* Opcional: Ajustar según la altura deseada */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .contact3 > div {
@@ -125,7 +125,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #333;
-    padding: 20px;          /* Espacio dentro de cada columna */
+    padding: 20px;
 }
 
 

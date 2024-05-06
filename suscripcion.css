@@ -100,7 +100,7 @@ footer {
 }
 
 .custom-select::after {
-    content: '\25BC'; /* Down arrow */
+    content: '\25BC';
     position: absolute;
     right: 10px;
     pointer-events: none;
@@ -122,5 +122,5 @@ footer {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin-bottom: 20px; /* Añadido para mayor separación */
+    margin-bottom: 20px;
 }
