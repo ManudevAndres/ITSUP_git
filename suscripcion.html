@@ -20,27 +20,73 @@
         <section class="subscription-details">
             <h1>Detalles de la suscripción</h1>
             <div class="plan-info">
-                <p>Plan seleccionado: Ejemplo</p>
-                <p>Precio: Ejemplo</p>
+                <label for="planSeleccionado">Selecciona tu plan:</label>
+                <select name="plan" id="planSeleccionado" class="custom-select">
+                    <option value="Plan 1: Instalación + 1 mes de soporte - 249 €">Plan 1: Instalación + 1 mes de soporte - 249 €</option>
+                    <option value="Plan 2: Instalación + 1 año de soporte - 399 €">Plan 2: Instalación + 1 año de soporte - 399 €</option>
+                </select>
             </div>
             <div class="payment-info">
                 <h2>Payment Information</h2>
-                <form>
-                    <input type="text" placeholder="Número de la tarjeta de crédito" name="credit-card">
-                    <input type="text" placeholder="00/00" name="expiry-date">
-                    <input type="text" placeholder="Titular de la tarjeta" name="card-holder">
-                    <label>
-                        <input type="checkbox" name="terms">
-                        Estoy de acuerdo con los términos y condiciones
-                    </label>
-                    <button><a href="pago.html" class="enlace" style="color: white;
-                        text-decoration: none;">Confirmar suscripción</a></button>
+                <form id="paymentForm">
+                    <input type="text" placeholder="Número de la tarjeta de crédito" name="credit-card" id="credit-card">
+                    <input type="text" placeholder="00/00" name="expiry-date" id="expiry-date">
+                    <input type="text" placeholder="Titular de la tarjeta" name="card-holder" id="card-holder">
+                    <button type="submit" class="full-width-button">Confirmar suscripción</button>
                 </form>
+                <span class="error" id="formError"></span>
             </div>
         </section>
     </main>
     <footer>
         <p>2024 © ITSup All rights reserved.</p>
     </footer>
+    <script>
+        
+        function preselectPlan() {
+            const params = new URLSearchParams(window.location.search);
+            const selectedPlan = params.get('plan');
+            const planSelector = document.getElementById('planSeleccionado');
+            if (selectedPlan === 'plan1') {
+                planSelector.selectedIndex = 0;
+            } else if (selectedPlan === 'plan2') {
+                planSelector.selectedIndex = 1;
+            }
+        }
+
+        window.onload = preselectPlan;
+
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let formIsValid = true;
+
+            document.getElementById('formError').innerText = '';
+
+            const cardNumber = document.getElementById('credit-card').value.trim();
+            const cardRegex = /^\d{16}$/;
+            if (cardNumber === '' || !cardRegex.test(cardNumber)) {
+                formIsValid = false;
+                document.getElementById('formError').innerText = 'Número de tarjeta inválido. Deben ser 16 dígitos.';
+            }
+
+            const expiryDate = document.getElementById('expiry-date').value.trim();
+            const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+            if (expiryDate === '' || !expiryRegex.test(expiryDate)) {
+                formIsValid = false;
+                document.getElementById('formError').innerText = 'Fecha de expiración inválida. Debe tener el formato MM/AA.';
+            }
+
+            const cardHolder = document.getElementById('card-holder').value.trim();
+            if (cardHolder === '') {
+                formIsValid = false;
+                document.getElementById('formError').innerText = 'El titular de la tarjeta no puede estar vacío.';
+            }
+
+            if (formIsValid) {
+                alert('Pago realizado correctamente.');
+                window.location.href = 'pago.html';
+            }
+        });
+    </script>
 </body>
 </html>

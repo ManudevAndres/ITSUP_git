@@ -9,29 +9,62 @@
 
 <body>
     <div class="contenedor">
-        <h1>Log in</h1>        
+        <h1>Login</h1>        
         <h2>Conéctate para acceder a nuestros servicios</h2>
-        <div class="Apartado-email">
-            <a>Mail</a>
-            <form action="/registro" method="post" class="Registro-email">
-                <i class="fas fa-envelope"></i>
-                <input type="email" id="email" name="email" class="email-input" placeholder="email@email.com" required>
-            </form>
-        </div>
-        <div class="Apartado-contraseña">
-        <a>Contraseña</a>
-        <form action="/registro" method="post">
-            <i class="fas fa-lock"></i>
-            <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
-        </form>
-        </div>
-        <div class="boton-registro">
-            <button class="boton-registro"><a href="main.html" style="text-decoration:none; color:white" >Inicio</a></button>
-        </div>
-    
-        <hr>
-        <p>¿Nuevo usuario? <a href="registro.html">Registrate ahora</a></p>
-    </div>
-</body>
 
+        <form id="loginForm">
+            <div class="Apartado-email">
+                <a>Mail</a>
+                <div class="Registro-email">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" class="email-input" placeholder="email@email.com" required>
+                    <span class="error" id="errorEmail"></span>
+                </div>
+            </div>
+            <div class="Apartado-contraseña">
+                <a>Contraseña</a>
+                <div class="Registro-contraseña">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Introduce tu contraseña" required>
+                    <span class="error" id="errorContrasena"></span>
+                </div>
+            </div>
+            <div class="boton-registro">
+                <button type="submit" class="boton-registro" style="text-decoration:none; color:white">Inicio</button>
+            </div>
+        </form>
+
+        <hr>
+        <p>¿Nuevo usuario? <a href="registro.html">Regístrate ahora</a></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            
+            event.preventDefault();
+            let formIsValid = true;
+
+            document.getElementById('errorEmail').innerText = '';
+            document.getElementById('errorContrasena').innerText = '';
+
+            const email = document.getElementById('email').value.trim();
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (email === '' || !emailRegex.test(email)) {
+                document.getElementById('errorEmail').innerText = 'Por favor, ingresa un correo electrónico válido.';
+                formIsValid = false;
+            }
+
+            const contrasena = document.getElementById('contrasena').value.trim();
+            if (contrasena === '' || contrasena.length < 6) {
+                document.getElementById('errorContrasena').innerText = 'La contraseña debe tener al menos 6 caracteres.';
+                formIsValid = false;
+            }
+
+            if (formIsValid) {
+                alert('Login satisfactorio.');
+                window.location.href = 'main.html';
+            }
+        });
+    </script>
+</body>
 </html>
